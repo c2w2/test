@@ -44,7 +44,7 @@ public class tat {
 	        long start = System.currentTimeMillis();
 	        long end = System.currentTimeMillis() ;
 	        final String iptmp[] = new String[9999];
-	        final int iptmpa=0;
+	        final int iptmpa[]={0};
 	        while(true)
 	        {
 	        if((end-start)/1000<MAX_ALLOWED)
@@ -63,9 +63,11 @@ public class tat {
 	        	      					}else
 	        	      					{
 	        	      						ip.put(tmp, 1);
-	        	      						iptmp[iptmpa++]=tmp;
+	        	      						iptmp[iptmpa[0]++]=tmp;
 	        	      					}
-	        	       			        	       					         	       					 
+	        	       			 
+	        	       					         	       					
+	        	        					 
 	        	      				} 
 	        	        				
 	        	     
@@ -76,7 +78,7 @@ public class tat {
 	        	
 	        }else
 	        {
-	        	for(int i=0; i<iptmpa; i++)
+	        	for(int i=0; i<iptmpa[0]; i++)
 	        	{
 	        		if((int)ip.get(iptmp[i])>maxallowcount)
 	        		{
@@ -90,6 +92,6 @@ public class tat {
 	        }
 	        end = System.currentTimeMillis();
 	      }
-	 }
+	 
 }
 }
