@@ -88,10 +88,7 @@ public class tat {
 	        			System.out.println("| 								     |");
 	        			System.out.println("+------------------------------------+");
 	        		}
-	        		iptmp[i]="";
 	        	}
-	        	start = System.currentTimeMillis();
-	        	ip.clear();
 	        }
 	        end = System.currentTimeMillis();
 	      }
